@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetails2">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Enter Room Details"
+        android:gravity="center"
+        android:background="@drawable/b2"
+        android:textSize="20dp"
+
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="-1dp"
+        tools:ignore="MissingConstraints" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintTop_toBottomOf="@id/textView6"
+    >
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Number of person"
+       android:layout_marginTop="20dp"
+        />
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/categry"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/btn_dropdown"
+        />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Please enter your address"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/checkIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Check In Date"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Check Out Date"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
